@@ -3,9 +3,9 @@
 For this sprint, you are being asked to create a **form** using the DOM which will validate a range of different user input scenarios.
 
 ### Objectives:
-* understand concept of form validation, and what can be validated on the client side before information is sent to the server.
-* use CSS and html attributes as validation constraints.
-* use in-line back-end validation where appropriate.
+* understand concept of form validation, and what can be validated on the client side before information is sent to the server
+* use CSS and html attributes to help with validation and navigation
+* use in-line back-end validation where appropriate
 * design an engaging and navigable UX with clear feedback
 
 ### Task:
@@ -33,7 +33,7 @@ The form **must** validate the fields listed below:
 * `email`, and confirm email (should match, and follow rules)
 * `bankAccountNo` & `sortCode` (should be strings and follow conventions - and please don't use your own!)
 * `accountType` (business, personal, etc.)
-* `whereDidYouHearAboutUs` (users should be able to choose from a predefined list of 'internet', 'magazine', 'word of mouth', 'carrier pigeon', or 'other'.)
+* `whereDidYouHearAboutUs` (users should be able to choose from a predefined list of 'internet', 'magazine', 'word of mouth', 'carrier pigeon', or 'other')
 
 Your form should also have:
 * Password, confirm password, and a password strength indicator (inputs should match, and they should follow the rules from your password strength kata. The indicator should provide feedback on how strong the password is; weak passwords should be disallowed)
@@ -47,7 +47,7 @@ When a user successfully submits a form (it passes validation front and back), t
 * `occupation`
 * `aboutMe`
 * `profilePic`
-* Any fields from the submission list above.
+* any fields from the submission list above
 
 ### Helpful links:
 Form validation is more than coding - it is a service you provide to users, and as such, there are practices and expectations in terms of accessibility, usability and functionality. Best practice rules are ignored at your peril! Here are some interesting articles that document the sort of approaches you should adopt when designing your form, from [smashingmagazine](https://www.smashingmagazine.com/2011/11/extensive-guide-web-form-usability/) and [designmodo](https://designmodo.com/ux-form-validation/).
