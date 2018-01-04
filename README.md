@@ -1,14 +1,14 @@
-FORM VALIDATION
+## FORM VALIDATION
 
 For this sprint, you are being asked to create a **form** using the DOM which will validate a range of different user input scenarios.
 
-Objectives:
+### Objectives:
 * understand concept of form validation, and what can be validated on the client side before information is sent to the server.
 * use CSS and html attributes as validation constraints.
 * use in-line back-end validation where appropriate.
 * design an engaging and navigable UX with clear feedback
 
-Task:
+### Task:
 You need to write a typical **account creation form** for a fictional website (the purpose of which is delegated to your imagination, but think along the lines of Facebook or Twitter).  
 
 We have pre-populated a MongoDB database with a selection of a thousand users. The API for this database can be found at https://pure-dusk-74256.herokuapp.com. You have access to the following endpoints:
@@ -44,16 +44,14 @@ You will need to provide helpful feedback to your client, as well as preventing 
 Unusually, we have also done backend validation to ensure data is submitted in the correct format. If you get an error message, your front-end validation is incorrect.
 
 When a user successfully submits a form (it passes validation front and back), they should be taken to a basic 'profile page' with the option to edit the following fields:
-* Occupation.
-* About me.
-* Profile picture link.
+* `occupation`
+* `aboutMe`
+* `profilePic`
 * Any fields from the submission list above.
 
-Helpful links:
-Form validation is more than coding - it is a service you provide to users, and as such, there are practices and expectations in terms of accessibility, usability and functionality. Best practice rules are ignored at your peril! Here are some interesting articles that document the sort of approaches you should adopt when designing your form:
-https://www.smashingmagazine.com/2011/11/extensive-guide-web-form-usability/
-https://designmodo.com/ux-form-validation/
+### Helpful links:
+Form validation is more than coding - it is a service you provide to users, and as such, there are practices and expectations in terms of accessibility, usability and functionality. Best practice rules are ignored at your peril! Here are some interesting articles that document the sort of approaches you should adopt when designing your form, from [smashingmagazine](https://www.smashingmagazine.com/2011/11/extensive-guide-web-form-usability/) and [designmodo](https://designmodo.com/ux-form-validation/).
 
-There are a lot of input attribute types that your browser can use to modify behaviour on your form, some of which you may never use again, but could be fun to use now: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+There are a lot of [html input attribute types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) that your browser can use to modify behaviour on your form, some of which you may never use again, but could be experimented with now.
 
-CSS pseudo-classes. These use CSS to interpret other element attributes: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes. Don't forget that CSS can be used more broadly to signal things too; people make inferences from colour, font size and font style, for example.
+[CSS pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) interpret other element attributes. Don't forget that CSS can be used more broadly to signal things too; people make inferences from colour, font size and font style, for example.
