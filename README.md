@@ -4,10 +4,9 @@ For this sprint, you are being asked to create a **form** using the DOM which wi
 
 Objectives:
 * understand concept of form validation, and what can be validated on the client side before information is sent to the server.
-* use constraint validation in your html input attributes.
-* use constraint validation in CSS pseudo-selectors.
+* use CSS and html attributes as validation constraints.
 * use in-line back-end validation where appropriate.
-* design a UX
+* design an engaging and navigable UX with clear feedback
 
 Task:
 You need to write a typical **account creation form** for a fictional website (the purpose of which is delegated to your imagination, but think along the lines of Facebook or Twitter).  
@@ -30,7 +29,7 @@ The form **must** validate the fields listed below:
 * `gender` (must be 'male', 'female', 'non-binary', 'prefer not to say', 'prefer to self-identify')
 * `phoneNumber` (should accept only valid UK formats)
 * `address` (just one line is fine)
-* `postcode` (should follow UK conventions)
+* `postCode` (should follow UK conventions)
 * `email`, and confirm email (should match, and follow rules)
 * `bankAccountNo` & `sortCode` (should be strings and follow conventions - and please don't use your own!)
 * `accountType` (business, personal, etc.)
