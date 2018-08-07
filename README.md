@@ -24,16 +24,11 @@ PATCH - update a user with the given username. Accepts all keys in the update do
 The form **must** validate the fields listed below:
 * `firstName` (only allow letters, spaces, hyphens and apostrophes)
 * `lastName` (as above)
-* `userName` (should contain at least three letters and two numbers)
 * `dob` (aka date of birth; should be a valid date, and indicate the user is at least 18 years old. NB: the test might be out by a few million milliseconds so don't be too precise with your test boundary!)
 * `gender` (must be 'male', 'female', 'non-binary', 'prefer not to say', 'prefer to self-identify')
-* `phoneNumber` (should accept only valid UK formats)
-* `address` (just one line is fine)
-* `postCode` (should follow UK conventions)
 * `email`, and confirm email (should match, and follow rules)
-* `bankAccountNo` & `sortCode` (should be strings and follow conventions - and please don't use your own!)
-* `accountType` (business, personal, etc.)
-* `whereDidYouHearAboutUs` (users should be able to choose from a predefined list of 'internet', 'magazine', 'word of mouth', 'carrier pigeon', or 'other')
+* `phoneNumber` (should accept only valid UK formats)
+* `userName` (should contain at least three letters and two numbers)
 
 Your form should also have:
 * Password, confirm password, and a password strength indicator (inputs should match, and they should follow the rules from your password strength kata. The indicator should provide feedback on how strong the password is; weak passwords should be disallowed)
