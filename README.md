@@ -11,13 +11,13 @@ For this sprint, you are being asked to create a **form** using the DOM which wi
 ### Task:
 You need to write a typical **account creation form** for a fictional website (the purpose of which is delegated to your imagination, but think along the lines of Facebook or Twitter).  
 
-We have pre-populated a MongoDB database with a selection of a thousand users. The API for this database can be found at https://pure-dusk-74256.herokuapp.com. You have access to the following endpoints:
+We have pre-populated a MongoDB database with a selection of a thousand users. The API for this database can be found at https://intense-coast-72655.herokuapp.com/. You have access to the following endpoints:
 
-/api/users
+`/api/users`
 GET - returns all users.
 POST - adds a user. It requires data for all the keys in the first list below else you will get an error.
 
-/api/users/:username
+`/api/users/:username`
 GET - return the user with the given username
 PATCH - update a user with the given username. Accepts all keys in the update document described below.
 
