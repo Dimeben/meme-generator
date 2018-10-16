@@ -15,12 +15,12 @@ You need to write a typical **account creation form** for a fictional website (t
 We have pre-populated a MongoDB database with a selection of a thousand users. The API for this database can be found at https://intense-coast-72655.herokuapp.com/. You have access to the following endpoints:
 
 `/api/users`
-GET - returns all users.
-POST - adds a user. It requires data for all the keys in the first list below else you will get an error.
+- `GET` - returns all users.
+- `POST` - adds a user. It requires data for all the keys in the first list below else you will get an error.
 
 `/api/users/:username`
-GET - return the user with the given username
-PATCH - update a user with the given username. Accepts all keys in the update document described below.
+- `GET` - return the user with the given username
+- `PATCH` - update a user with the given username. Accepts all keys in the update document described below.
 
 The form **must** validate the fields listed below:
 * `firstName` (only allow letters, spaces, hyphens and apostrophes)
@@ -31,11 +31,19 @@ The form **must** validate the fields listed below:
 * `phoneNumber` (should accept only valid UK formats)
 * `userName` (should contain at least three letters and two numbers)
 
+---
+
+* Use [Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) to test the behaviour of each input as you go along.
+
+---
+
 Your form should also have:
 * Password, confirm password, and a password strength indicator (inputs should match, and they should follow the rules from your password strength kata. The indicator should provide feedback on how strong the password is; weak passwords should be disallowed)
 * Accept agreement (users should only be able to tick this when they have scrolled to the bottom of your agreement text; provide lorem ipsum if you don't fancy writing a legally binding contract)
 
 You will need to provide helpful feedback to your client, as well as preventing them from submitting, when they make mistakes.
+
+---
 
 Unusually, we have also done backend validation to ensure data is submitted in the correct format. If you get an error message, your front-end validation is incorrect.
 
