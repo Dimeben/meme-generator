@@ -22,7 +22,7 @@ We have pre-populated a MongoDB database with a selection of a thousand users. T
 - `GET` - return the user with the given username
 - `PATCH` - update a user with the given username. Accepts all keys in the update document described below.
 
-The form **must** validate the fields listed below:
+Your form, when submitted, should add a user to this database as long as all of the information provided is valid.  The form **must** validate the fields listed below:
 * `firstName` (only allow letters, spaces, hyphens and apostrophes)
 * `lastName` (as above)
 * `dob` (aka date of birth; should be a valid date, and indicate the user is at least 18 years old. NB: the test might be out by a few million milliseconds so don't be too precise with your test boundary!)
