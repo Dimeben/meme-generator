@@ -26,10 +26,10 @@ Your form, when submitted, should add a user to this database as long as all of 
 * `firstName` (only allow letters, spaces, hyphens and apostrophes)
 * `lastName` (as above)
 * `dob` (aka date of birth; should be a valid date, and indicate the user is at least 18 years old. NB: the test might be out by a few million milliseconds so don't be too precise with your test boundary!)
+* `userName` (should contain at least three letters and two numbers - and not already be in the user database!)
 * `gender` (must be 'male', 'female', 'non-binary', 'prefer not to say', 'prefer to self-identify')
 * `email`, and confirm email (should match, and follow rules)
 * `phoneNumber` (should accept only valid UK formats)
-* `userName` (should contain at least three letters and two numbers)
 
 ---
 
