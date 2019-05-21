@@ -33,10 +33,6 @@ Your form, when submitted, should add a user to this database as long as all of 
 
 ---
 
-* Use [Cypress](https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell) to test the behaviour of each input as you go along.
-
----
-
 Your form should also have:
 * Password, confirm password, and a password strength indicator (inputs should match, and they should follow the rules from your password strength kata. The indicator should provide feedback on how strong the password is; weak passwords should be disallowed)
 * Accept agreement (users should only be able to tick this when they have scrolled to the bottom of your agreement text; provide lorem ipsum if you don't fancy writing a legally binding contract)
