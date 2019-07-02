@@ -7,7 +7,6 @@ For this sprint, you are being asked to create a **form** using the DOM which wi
 * use CSS and html attributes to help with validation and navigation
 * use in-line back-end validation where appropriate
 * design an engaging and navigable UX with clear feedback
-* use automated testing to test your form as you build it
 
 ### Task:
 You need to write a typical **account creation form** for a fictional website (the purpose of which is delegated to your imagination, but think along the lines of Facebook or Twitter).  
