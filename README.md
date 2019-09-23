@@ -4,7 +4,7 @@ For this sprint, you are being asked to create a **form** using the DOM which wi
 
 ### Objectives:
 
-- understand concept of form validationinformation is sent to the server
+- understand concept of client-side form validation
 - use CSS and html attributes to help with validation and navigation
 - design an engaging and navigable UX with clear feedback
 
