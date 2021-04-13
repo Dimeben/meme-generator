@@ -19,7 +19,7 @@ Fields to collect from your user:
 | Username         | Must be a mix of letters and numbers, no other characters or spaces allowed |
 | Avatar Image url | Valid Url                                                                   |
 
-## Submit Page
+#### Submit Page
 
 Once the user has signed up to your website they should be taken to a profile page where they can view all of the information they've just submitted. Think about the layout of profile pages you may have used in the past and create a user friendly site displaying their information.
 
@@ -39,7 +39,7 @@ Fields to collect from your user:
 | Last Name  | Required                                          |
 | Star Sign  | Must be a valid star sign (Aries, Taurus, etc...) |
 
-## Submit Page
+#### Submit Page
 
 Use the users details to display their horoscope. The one they recieve should be based on the star sign they've submitted.
 
@@ -62,7 +62,7 @@ Fields to collect from your user:
 | Email        | Must be a valid email address |
 | Phone Number | Must be a valid phone number  |
 
-## Submit Page
+#### Submit Page
 
 Use the users submitted details to produce a professional looking business card.
 
@@ -82,7 +82,7 @@ Fields to collect from your user:
 | Bottom Text  | Max 50 characters |
 | Image Choice | Required          |
 
-## Submit Page
+#### Submit Page
 
 The users text superimposed onto their chosen image.
 
