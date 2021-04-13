@@ -95,7 +95,7 @@ _Additional_
 - Create a basic page containing your form. The user should be able to fill out your form correctly and be taken to the submit page.
 - Make sure the user can't submit the form without providing valid inputs for all required fields. Think about what kind of feedback you can give them that would let them know where the mistakes are if they try and submit too early.
 - Give the user feedback if they fill out an input incorrectly. You should make use of a variety of [**html DOM events**](https://www.w3schools.com/jsref/dom_obj_event.asp) to trigger feedback at the appropriate time. Some useful ones will be `blur`, `change` and `keyup` events.
-- You should attempt use of `event.target` - another way of accessing the item that has triggered the event(https://developer.mozilla.org/en-US/docs/Web/API/Event/target).
+- You should attempt use of `event.target` - another way of accessing the item that has triggered the [event](https://developer.mozilla.org/en-US/docs/Web/API/Event/target).
 - You should use `DOM` methods if you want to hide things or create new elements.
 - Style your form to improve your UX.
 - Add styling to your error messages to draw the users attention. Try using [DOM classList methods](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
