@@ -89,3 +89,57 @@
 .invalid {
   background-color: rgb(236, 96, 96);
 }
+@media (max-width: 768px) {
+  .flexcontainer1 {
+    font-size: 18px;
+  }
+
+  .flexcontainer2 {
+    flex-direction: column; 
+    width: 80%; 
+    padding: 15px; 
+  }
+
+  .flexcontainer2 img {
+    max-width: 150px; 
+    max-height: 150px;
+  }
+
+  .memelabel,
+  .memeinput {
+    width: 80%;
+    font-size: 12px;
+  }
+
+  #memesubmit {
+    width: 50%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .flexcontainer1 {
+    font-size: 16px;
+  }
+
+  .flexcontainer2 {
+    width: 100%; 
+    padding: 10px;
+  }
+
+  .flexcontainer2 img {
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  .memelabel,
+  .memeinput {
+    width: 100%; 
+    font-size: 10px; 
+  }
+
+  #memesubmit {
+    width: 70%; 
+    font-size: 12px;
+  }
+}
