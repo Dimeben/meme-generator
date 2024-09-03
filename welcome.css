@@ -10,140 +10,60 @@
   position: fixed;
   text-align: center;
   color: white;
-  width: 100%; /* Make the container span the full width of the screen */
-  height: 100%; /* Make the container span the full height of the screen */
-  overflow: hidden; /* Prevent overflow */
 }
 
 .freewayTop {
   position: absolute;
-  top: 10%; /* Use percentage-based positioning */
-  left: 18%; /* Adjust percentage as needed */
+  top: 100px;
+  left: 180px;
   background-color: transparent;
-  font-size: 2.5vw; /* Use viewport-based units for responsive text */
+  font-size: 25px;
   max-width: 150px;
 }
 
 .freewayBottom {
   position: absolute;
-  top: 12%;
-  right: 24%;
+  top: 120px;
+  right: 240px;
   background-color: transparent;
-  font-size: 2.5vw;
+  font-size: 25px;
   max-width: 150px;
 }
 
 .drakeTop {
   position: absolute;
   color: black;
-  top: 12%;
-  right: 12%;
+  top: 120px;
+  right: 120px;
   background-color: transparent;
-  font-size: 3.5vw;
+  font-size: 35px;
   max-width: 250px;
 }
 
 .drakeBottom {
   position: absolute;
   color: black;
-  bottom: 12%;
-  right: 12%;
+  bottom: 120px;
+  right: 120px;
   background-color: transparent;
-  font-size: 3.5vw;
+  font-size: 35px;
   max-width: 250px;
 }
 
 .tradeofferTop {
   position: absolute;
-  top: 12%;
-  left: 1%;
+  top: 120px;
+  left: 1px;
   background-color: transparent;
-  font-size: 2vw;
+  font-size: 20px;
   max-width: 200px;
 }
 
 .tradeofferBottom {
   position: absolute;
-  top: 12%;
-  right: 1%;
+  top: 120px;
+  right: 1px;
   background-color: transparent;
-  font-size: 2vw;
+  font-size: 20px;
   max-width: 200px;
-}
-
-/* Media queries for smaller screens */
-@media (max-width: 768px) {
-  .freewayTop {
-    top: 15%;
-    left: 10%;
-    font-size: 4vw;
-  }
-
-  .freewayBottom {
-    top: 17%;
-    right: 10%;
-    font-size: 4vw;
-  }
-
-  .drakeTop {
-    top: 18%;
-    right: 10%;
-    font-size: 5vw;
-  }
-
-  .drakeBottom {
-    bottom: 18%;
-    right: 10%;
-    font-size: 5vw;
-  }
-
-  .tradeofferTop {
-    top: 18%;
-    left: 2%;
-    font-size: 3.5vw;
-  }
-
-  .tradeofferBottom {
-    top: 18%;
-    right: 2%;
-    font-size: 3.5vw;
-  }
-}
-
-@media (max-width: 480px) {
-  .freewayTop {
-    top: 20%;
-    left: 8%;
-    font-size: 5vw;
-  }
-
-  .freewayBottom {
-    top: 22%;
-    right: 8%;
-    font-size: 5vw;
-  }
-
-  .drakeTop {
-    top: 23%;
-    right: 8%;
-    font-size: 6vw;
-  }
-
-  .drakeBottom {
-    bottom: 23%;
-    right: 8%;
-    font-size: 6vw;
-  }
-
-  .tradeofferTop {
-    top: 23%;
-    left: 3%;
-    font-size: 4.5vw;
-  }
-
-  .tradeofferBottom {
-    top: 23%;
-    right: 3%;
-    font-size: 4.5vw;
-  }
 }
