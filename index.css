@@ -42,7 +42,7 @@
   width: 720px;
 }
 
-.memesubmit {
+#memesubmit {
   background-color: white;
   display: flex;
   align-items: center;

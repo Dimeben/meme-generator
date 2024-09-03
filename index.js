@@ -5,6 +5,8 @@ const imgContainer = document.getElementsByClassName("flexcontainer2");
 const topInput = document.getElementById("topinput");
 const bottomInput = document.getElementById("bottominput");
 const memeLabel = document.getElementsByClassName("memelabel");
+const memeForm = document.getElementById("memeform");
+const submitButton = document.getElementById("memesubmit");
 
 function selectImgFunc(event) {
   const id = event.target.id;
@@ -41,7 +43,37 @@ function validTopInput(event) {
   }
 }
 
+function validBottomInput(event) {
+  const bottomText = event.target.value;
+  if (bottomText.length > 30) {
+    bottomInput.classList.add("invalid");
+    bottomInput.classList.remove("valid");
+    memeLabel[1].innerText = `You are over by ${bottomText.length - 30}`;
+  } else if (bottomText.length > 0 && bottomText.length <= 30) {
+    bottomInput.classList.add("valid");
+    bottomInput.classList.remove("invalid");
+    memeLabel[1].innerText = `Bottom Text:`;
+  } else {
+    bottomInput.classList.remove("valid");
+    bottomInput.classList.add("memeinput");
+  }
+}
+
+function handleSubmit(event) {
+  const inputs = [...document.getElementsByClassName("memeinput")];
+  const allValid = inputs.every((input) => {
+    input.classList.contains("valid");
+  });
+  if (!allValid) {
+    event.preventDefault();
+  }
+  const topText = inputs[0].value;
+  const bottomText = inputs[1].value;
+}
+
 drake.addEventListener("click", selectImgFunc);
 freeway.addEventListener("click", selectImgFunc);
 tradeOffer.addEventListener("click", selectImgFunc);
 topInput.addEventListener("keyup", validTopInput);
+bottomInput.addEventListener("keyup", validBottomInput);
+memeForm.addEventListener("submit", handleSubmit);
