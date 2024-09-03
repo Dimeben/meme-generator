@@ -16,14 +16,17 @@ bottomText.innerText = bottomTextQuery;
 if (imageQuery === "drake.png") {
   topText.classList.add("drakeTop");
   bottomText.classList.add("drakeBottom");
+  image.id = "drake";
 }
 
 if (imageQuery === "freeway.png") {
   topText.classList.add("freewayTop");
   bottomText.classList.add("freewayBottom");
+  image.id = "freeway";
 }
 
 if (imageQuery === "tradeoffer.png") {
   topText.classList.add("tradeofferTop");
   bottomText.classList.add("tradeofferBottom");
+  image.id = "tradeoffer";
 }

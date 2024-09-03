@@ -1,69 +1,132 @@
 * {
   background-color: #004643;
+  box-sizing: border-box;
 }
 
-.freeway {
-  color: white;
-}
-
-.container {
+#welcome-meme {
   position: fixed;
   text-align: center;
   color: white;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .freewayTop {
   position: absolute;
-  top: 100px;
-  left: 180px;
+  top: 10%;
+  left: 18%;
   background-color: transparent;
-  font-size: 25px;
+  font-size: 2.5vw;
   max-width: 150px;
 }
 
 .freewayBottom {
   position: absolute;
-  top: 120px;
-  right: 240px;
+  top: 12%;
+  right: 24%;
   background-color: transparent;
-  font-size: 25px;
+  font-size: 2.5vw;
   max-width: 150px;
 }
 
 .drakeTop {
   position: absolute;
   color: black;
-  top: 120px;
-  right: 120px;
+  top: 12%;
+  right: 12%;
   background-color: transparent;
-  font-size: 35px;
+  font-size: 3.5vw;
   max-width: 250px;
 }
 
 .drakeBottom {
   position: absolute;
   color: black;
-  bottom: 120px;
-  right: 120px;
+  bottom: 12%;
+  right: 12%;
   background-color: transparent;
-  font-size: 35px;
+  font-size: 3.5vw;
   max-width: 250px;
 }
 
 .tradeofferTop {
   position: absolute;
-  top: 120px;
-  left: 1px;
+  top: 12%;
+  left: 1%;
   background-color: transparent;
-  font-size: 20px;
+  font-size: 2vw;
   max-width: 200px;
 }
 
 .tradeofferBottom {
   position: absolute;
-  top: 120px;
-  right: 1px;
+  top: 12%;
+  right: 1%;
   background-color: transparent;
-  font-size: 20px;
+  font-size: 2vw;
   max-width: 200px;
+}
+
+@media (max-width: 480px) {
+  #drake {
+    width: 100%;
+    height: 50%;
+  }
+
+  .drakeTop {
+    top: 2%;
+    right: 3%;
+    font-size: 9vw;
+    max-width: 45%;
+  }
+
+  .drakeBottom {
+    top: 25%;
+    right: 3%;
+    font-size: 9vw;
+    max-width: 45%;
+  }
+
+  #freeway {
+    width: 100%;
+    height: 50%;
+  }
+
+  .freewayTop {
+    top: 7%;
+    left: 25%;
+    font-size: 3vw;
+    max-width: 15%;
+    color: aliceblue;
+  }
+
+  .freewayBottom {
+    top: 9%;
+    right: 30%;
+    font-size: 3vw;
+    max-width: 15%;
+    color: aliceblue;
+  }
+
+  #tradeoffer {
+    width: 100%;
+    height: 50%;
+  }
+
+  .tradeofferTop {
+    top: 15%;
+    left: 15%;
+    font-size: 4vw;
+    max-width: 30%;
+    color: aliceblue;
+  }
+
+  .tradeofferBottom {
+    top: 15%;
+    right: 5%;
+    font-size: 4vw;
+    max-width: 30%;
+    color: aliceblue;
+  }
 }
