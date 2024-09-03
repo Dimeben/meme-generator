@@ -4,68 +4,67 @@
 }
 
 #welcome-meme {
-  position: fixed;
-  text-align: center;
-  color: white;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-}
-
-.freewayTop {
-  position: absolute;
-  top: 10%;
-  left: 18%;
-  background-color: transparent;
-  font-size: 2.5vw;
-  max-width: 150px;
-}
-
-.freewayBottom {
-  position: absolute;
-  top: 12%;
-  right: 24%;
-  background-color: transparent;
-  font-size: 2.5vw;
-  max-width: 150px;
 }
 
 .drakeTop {
   position: absolute;
   color: black;
   top: 12%;
-  right: 12%;
+  right: 40%;
   background-color: transparent;
   font-size: 3.5vw;
-  max-width: 250px;
+  max-width: 20%;
 }
 
 .drakeBottom {
   position: absolute;
   color: black;
   bottom: 12%;
-  right: 12%;
+  right: 40%;
   background-color: transparent;
   font-size: 3.5vw;
-  max-width: 250px;
+  max-width: 20%;
+}
+.freewayTop {
+  position: absolute;
+  color: aliceblue;
+  top: 14%;
+  left: 13%;
+  background-color: transparent;
+  font-size: 1.5vw;
+  max-width: 10%;
+}
+
+.freewayBottom {
+  position: absolute;
+  color: aliceblue;
+  top: 16%;
+  right: 60%;
+  background-color: transparent;
+  font-size: 1.5vw;
+  max-width: 10%;
 }
 
 .tradeofferTop {
   position: absolute;
-  top: 12%;
-  left: 1%;
+  color: aliceblue;
+  top: 16%;
+  left: 4%;
   background-color: transparent;
-  font-size: 2vw;
-  max-width: 200px;
+  font-size: 1.5vw;
+  max-width: 10%;
 }
 
 .tradeofferBottom {
   position: absolute;
-  top: 12%;
-  right: 1%;
+  color: aliceblue;
+  top: 16%;
+  left: 16%;
   background-color: transparent;
-  font-size: 2vw;
-  max-width: 200px;
+  font-size: 1.5vw;
+  max-width: 10%;
 }
 
 @media (max-width: 480px) {
