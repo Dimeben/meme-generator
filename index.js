@@ -14,16 +14,19 @@ function selectImgFunc(event) {
   if (id === drake.id) {
     freeway.remove();
     tradeOffer.remove();
+    memeForm.action += "?img=drake.png&&";
   }
 
   if (id === freeway.id) {
     drake.remove();
     tradeOffer.remove();
+    memeForm.action += "?img=freeway.png&&";
   }
 
   if (id === tradeOffer.id) {
     drake.remove();
     freeway.remove();
+    memeForm.action += "?img=tradeoffer.png&&";
   }
 }
 
@@ -69,6 +72,8 @@ function handleSubmit(event) {
   }
   const topText = inputs[0].value;
   const bottomText = inputs[1].value;
+  memeForm.action += `toptext=${topText}&&bottomtext=${bottomText}`;
+  location.href = memeForm.action;
 }
 
 drake.addEventListener("click", selectImgFunc);
