@@ -1,0 +1,57 @@
+* {
+  background-color: black;
+}
+
+.flexcontainer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.flexcontainer2 {
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  width: 250px;
+}
+
+.memelabel {
+  background-color: white;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 20px;
+  width: 720px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  font-size: 14px;
+  display: flex;
+}
+
+.memeinput {
+  background-color: white;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  width: 720px;
+}
+
+.memesubmit {
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.valid {
+  background-color: rgb(102, 230, 102);
+}
+
+.invalid {
+  background-color: rgb(236, 96, 96);
+}
