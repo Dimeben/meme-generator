@@ -1,51 +1,85 @@
 * {
-  background-color: black;
+  background-color: #004643;
 }
 
 .flexcontainer1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: #fffffe;
+  font-size: 25px;
+  text-shadow:4px 4px 0 #000,
+            -4px -4px 0 #000,
+            4px -4px 0 #000,
+            -4px 4px 0 #000,
+            0px 4px 0 #000,
+            4px 0px 0 #000,
+            0px -4px 0 #000,
+            -4px 0px 0 #000;
 }
 
 .flexcontainer2 {
   display: flex;
   flex-direction: row;
-  height: 250px;
-  width: 250px;
+  justify-content: center;
+  align-items: center;
+  width: 50%; 
+  background-color: #abd1c6; 
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.flexcontainer2 img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px; 
+  margin: 5px;
+  border-radius: 5px;
+  object-fit: cover; 
+}
+
+#memeform {
+  display: flex;
+  flex-direction: column; 
+    align-items: center; 
+  width: 100%; 
 }
 
 .memelabel {
-  background-color: white;
-  border: 2px solid;
-  border-radius: 5px;
-  padding: 20px;
-  width: 720px;
-  box-sizing: border-box;
-  margin-bottom: 15px;
+  background-color: transparent;
+  color: white;
   font-size: 14px;
-  display: flex;
+  margin-bottom: 5px;
+  width: 50%;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .memeinput {
-  background-color: white;
-  border: 2px solid;
+  background-color: #e8e4e6;
+  border: 2px solid #28a745;
   border-radius: 5px;
-  padding: 20px;
-  width: 100%;
+  padding: 10px;
+  width: 50%;
   box-sizing: border-box;
   margin-bottom: 15px;
   font-size: 14px;
-  display: flex;
-  align-items: center;
-  width: 720px;
 }
 
 #memesubmit {
-  background-color: white;
-  display: flex;
-  align-items: center;
+  background-color: #f9bc60;
+  color: #001e1d;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  width: 25%; 
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-top: 20px; 
 }
 
 .valid {
