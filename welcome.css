@@ -80,17 +80,17 @@
   }
 
   .drake-top {
-    top: 2%;
+    top: 1%;
     right: 3%;
-    font-size: 9vw;
+    font-size: 8vw;
     font-family: helvetica;
     max-width: 45%;
   }
 
   .drake-bottom {
-    top: 25%;
+    top: 26%;
     right: 3%;
-    font-size: 9vw;
+    font-size: 8vw;
     font-family: helvetica;
     max-width: 45%;
   }
