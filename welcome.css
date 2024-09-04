@@ -15,7 +15,7 @@
   right: 40%;
   background-color: transparent;
   font-size: 3.5vw;
-  font: Helvetica;
+  font-family: helvetica;
   max-width: 20%;
 }
 
@@ -26,7 +26,7 @@
   right: 40%;
   background-color: transparent;
   font-size: 3.5vw;
-  font: Helvetica;
+  font-family: helvetica;
   max-width: 20%;
 }
 .freewayTop {
@@ -36,7 +36,7 @@
   left: 13%;
   background-color: transparent;
   font-size: 1.5vw;
-  font: Helvetica;
+  font-family: helvetica;
   max-width: 10%;
 }
 
@@ -47,7 +47,7 @@
   right: 60%;
   background-color: transparent;
   font-size: 1.5vw;
-  font: Helvetica;
+  font-family: helvetica;
   max-width: 10%;
 }
 
@@ -58,7 +58,7 @@
   left: 4%;
   background-color: transparent;
   font-size: 1.5vw;
-  font: Helvetica;
+  font-family: helvetica;
   max-width: 10%;
 }
 
@@ -69,7 +69,7 @@
   left: 16%;
   background-color: transparent;
   font-size: 1.5vw;
-  font: Helvetica;
+  font-family: helvetica;
   max-width: 10%;
 }
 
@@ -83,7 +83,7 @@
     top: 2%;
     right: 3%;
     font-size: 9vw;
-    font: Helvetica;
+    font-family: helvetica;
     max-width: 45%;
   }
 
@@ -91,7 +91,7 @@
     top: 25%;
     right: 3%;
     font-size: 9vw;
-    font: Helvetica;
+    font-family: helvetica;
     max-width: 45%;
   }
 
@@ -105,7 +105,7 @@
     left: 25%;
     font-size: 3vw;
     max-width: 15%;
-    font: Helvetica;
+    font-family: helvetica;
     color: aliceblue;
   }
 
@@ -114,7 +114,7 @@
     right: 30%;
     font-size: 3vw;
     max-width: 15%;
-    font: Helvetica;
+    font-family: helvetica;
     color: aliceblue;
   }
 
@@ -128,7 +128,7 @@
     left: 15%;
     font-size: 4vw;
     max-width: 30%;
-    font: Helvetica;
+    font-family: helvetica;
     color: aliceblue;
   }
 
@@ -137,7 +137,7 @@
     left: 70%;
     font-size: 4vw;
     max-width: 30%;
-    font: Helvetica;
+    font-family: helvetica;
     color: aliceblue;
   }
 }
