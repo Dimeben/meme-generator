@@ -6,27 +6,27 @@ const searchStr = document.location.search;
 const queries = new URLSearchParams(searchStr);
 
 const imageQuery = queries.get("img");
-const topTextQuery = queries.get("toptext");
-const bottomTextQuery = queries.get("bottomtext");
+const topTextQuery = queries.get("top-text");
+const bottomTextQuery = queries.get("bottom-text");
 
-image.src = imageQuery;
+image.src = `${imageQuery}.png`;
 topText.innerText = topTextQuery;
 bottomText.innerText = bottomTextQuery;
 
-if (imageQuery === "drake.png") {
-  topText.classList.add("drakeTop");
-  bottomText.classList.add("drakeBottom");
+if (imageQuery === "drake") {
+  topText.classList.add("drake-top");
+  bottomText.classList.add("drake-bottom");
   image.id = "drake";
 }
 
-if (imageQuery === "freeway.png") {
-  topText.classList.add("freewayTop");
-  bottomText.classList.add("freewayBottom");
+if (imageQuery === "freeway") {
+  topText.classList.add("freeway-top");
+  bottomText.classList.add("freeway-bottom");
   image.id = "freeway";
 }
 
-if (imageQuery === "tradeoffer.png") {
-  topText.classList.add("tradeofferTop");
-  bottomText.classList.add("tradeofferBottom");
-  image.id = "tradeoffer";
+if (imageQuery === "trade-offer") {
+  topText.classList.add("trade-offer-top");
+  bottomText.classList.add("trade-offer-bottom");
+  image.id = "trade-offer";
 }

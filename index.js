@@ -1,12 +1,21 @@
 const drake = document.getElementById("drake");
 const freeway = document.getElementById("freeway");
-const tradeOffer = document.getElementById("tradeoffer");
-const imgContainer = document.getElementsByClassName("flexcontainer2");
-const topInput = document.getElementById("topinput");
-const bottomInput = document.getElementById("bottominput");
-const memeLabel = document.getElementsByClassName("memelabel");
-const memeForm = document.getElementById("memeform");
-const submitButton = document.getElementById("memesubmit");
+const tradeOffer = document.getElementById("trade-offer");
+const imgContainer = document.getElementsByClassName("images-and-inputs");
+const topInput = document.getElementById("top-input");
+const bottomInput = document.getElementById("bottom-input");
+const memeLabel = document.getElementsByClassName("meme-label");
+const memeForm = document.getElementById("meme-form");
+const submitButton = document.getElementById("meme-submit");
+const topTextError = document.getElementById("top-text-error");
+const bottomTextError = document.getElementById("bottom-text-error");
+const imageError = document.getElementById("image-error");
+
+let selectedImage = "";
+const checkValidText = {
+  topText: { valid: "false" },
+  bottomText: { valid: "false" },
+};
 
 function selectImgFunc(event) {
   const id = event.target.id;
@@ -14,66 +23,87 @@ function selectImgFunc(event) {
   if (id === drake.id) {
     freeway.remove();
     tradeOffer.remove();
-    memeForm.action += "?img=drake.png&&";
+    selectedImage += "drake";
   }
 
   if (id === freeway.id) {
     drake.remove();
     tradeOffer.remove();
-    memeForm.action += "?img=freeway.png&&";
+    selectedImage += "freeway";
   }
 
   if (id === tradeOffer.id) {
     drake.remove();
     freeway.remove();
-    memeForm.action += "?img=tradeoffer.png&&";
+    selectedImage += "trade-offer";
   }
 }
 
 function validTopInput(event) {
   const topText = event.target.value;
-  if (topText.length > 30) {
+  if (topText.length > 50) {
     topInput.classList.add("invalid");
     topInput.classList.remove("valid");
-    memeLabel[0].innerText = `You are over by ${topText.length - 30}`;
-  } else if (topText.length > 0 && topText.length <= 30) {
+    checkValidText.topText.valid = "false";
+    console.log(topInput.classList);
+    topTextError.innerText = `You have too many characters. Please delete ${
+      topText.length - 50
+    }.`;
+  } else if (topText.length > 0 && topText.length <= 50) {
     topInput.classList.add("valid");
     topInput.classList.remove("invalid");
-    memeLabel[0].innerText = `Top Text:`;
+    checkValidText.topText.valid = "true";
+    console.log(topInput.classList);
   } else {
     topInput.classList.remove("valid");
-    topInput.classList.add("memeinput");
+    checkValidText.topText.valid = "false";
+    console.log(topInput.classList);
   }
 }
 
 function validBottomInput(event) {
   const bottomText = event.target.value;
-  if (bottomText.length > 30) {
+  if (bottomText.length > 50) {
     bottomInput.classList.add("invalid");
     bottomInput.classList.remove("valid");
-    memeLabel[1].innerText = `You are over by ${bottomText.length - 30}`;
-  } else if (bottomText.length > 0 && bottomText.length <= 30) {
+    checkValidText.bottomText.valid = "false";
+    bottomTextError.innerText = `You have too many characters. Please delete ${
+      bottomText.length - 50
+    }.`;
+  } else if (bottomText.length > 0 && bottomText.length <= 50) {
     bottomInput.classList.add("valid");
     bottomInput.classList.remove("invalid");
-    memeLabel[1].innerText = `Bottom Text:`;
+    checkValidText.bottomText.valid = "true";
   } else {
     bottomInput.classList.remove("valid");
-    bottomInput.classList.add("memeinput");
+    checkValidText.bottomText.valid = "false";
   }
 }
 
 function handleSubmit(event) {
-  const inputs = [...document.getElementsByClassName("memeinput")];
+  const inputs = [...document.getElementsByClassName("meme-input")];
   const allValid = inputs.every((input) => {
     input.classList.contains("valid");
   });
-  if (!allValid) {
+  console.log(allValid);
+
+  if (!selectedImage) {
     event.preventDefault();
+    imageError.innerText = "You must select an image and complete both fields.";
+    return;
   }
-  const topText = inputs[0].value;
-  const bottomText = inputs[1].value;
-  memeForm.action += `toptext=${topText}&&bottomtext=${bottomText}`;
-  location.href = memeForm.action;
+
+  if (
+    checkValidText.bottomText.valid === "true" &&
+    checkValidText.topText.valid === "true"
+  ) {
+    const topText = inputs[0].value;
+    const bottomText = inputs[1].value;
+    const baseUrl = `${memeForm.action}`;
+    const targetUrl = `${baseUrl}?img=${selectedImage}&top-text=${topText}&bottom-text=${bottomText}`;
+    location.href = targetUrl;
+  }
+  event.preventDefault();
 }
 
 drake.addEventListener("click", selectImgFunc);

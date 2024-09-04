@@ -8,7 +8,7 @@
   height: 100%;
 }
 
-.drakeTop {
+.drake-top {
   position: absolute;
   color: black;
   top: 12%;
@@ -19,7 +19,7 @@
   max-width: 20%;
 }
 
-.drakeBottom {
+.drake-bottom {
   position: absolute;
   color: black;
   bottom: 12%;
@@ -29,7 +29,7 @@
   font-family: helvetica;
   max-width: 20%;
 }
-.freewayTop {
+.freeway-top {
   position: absolute;
   color: aliceblue;
   top: 14%;
@@ -40,7 +40,7 @@
   max-width: 10%;
 }
 
-.freewayBottom {
+.freeway-bottom {
   position: absolute;
   color: aliceblue;
   top: 16%;
@@ -51,7 +51,7 @@
   max-width: 10%;
 }
 
-.tradeofferTop {
+.trade-offer-top {
   position: absolute;
   color: aliceblue;
   top: 16%;
@@ -62,7 +62,7 @@
   max-width: 10%;
 }
 
-.tradeofferBottom {
+.trade-offer-bottom {
   position: absolute;
   color: aliceblue;
   top: 16%;
@@ -79,7 +79,7 @@
     height: 50%;
   }
 
-  .drakeTop {
+  .drake-top {
     top: 2%;
     right: 3%;
     font-size: 9vw;
@@ -87,7 +87,7 @@
     max-width: 45%;
   }
 
-  .drakeBottom {
+  .drake-bottom {
     top: 25%;
     right: 3%;
     font-size: 9vw;
@@ -100,7 +100,7 @@
     height: 50%;
   }
 
-  .freewayTop {
+  .freeway-top {
     top: 7%;
     left: 25%;
     font-size: 3vw;
@@ -109,7 +109,7 @@
     color: aliceblue;
   }
 
-  .freewayBottom {
+  .freeway-bottom {
     top: 9%;
     right: 30%;
     font-size: 3vw;
@@ -123,8 +123,8 @@
     height: 50%;
   }
 
-  .tradeofferTop {
-    top: 20%;
+  .trade-offer-top {
+    top: 15%;
     left: 15%;
     font-size: 4vw;
     max-width: 30%;
@@ -132,9 +132,9 @@
     color: aliceblue;
   }
 
-  .tradeofferBottom {
-    top: 20%;
-    left: 70%;
+  .trade-offer-bottom {
+    top: 15%;
+    left: 60%;
     font-size: 4vw;
     max-width: 30%;
     font-family: helvetica;

@@ -8,31 +8,34 @@
     <title>Meme Generator</title>
   </head>
   <body>
-    <div class="flexcontainer1">
+    <div class="intro-text">
       <h1>Meme Generator</h1>
       <h2>Create your meme here! Select an image to begin:</h2>
     </div>
-    <form id="memeform" method="GET" action="./welcome.html">
-      <div class="flexcontainer2">
+    <form id="meme-form" method="GET" action="./welcome.html">
+      <div class="images-and-inputs">
         <img src="./drake.png" id="drake" alt="Drake Meme" />
         <img src="./freeway.png" id="freeway" alt="Freeway Meme" />
-        <img src="./tradeoffer.png" id="tradeoffer" alt="Trade Offer Meme" />
+        <img src="./trade-offer.png" id="trade-offer" alt="Trade Offer Meme" />
       </div>
-      <label class="memelabel" for="topinput">Top Text:</label>
+      <em class="invalid-input" id="image-error"></em>
+      <label class="meme-label" for="top-input">Top Text:</label>
       <input
-        class="memeinput"
-        id="topinput"
+        class="meme-input"
+        id="top-input"
         type="text"
         placeholder="Type here..."
       />
-      <label class="memelabel" for="bottominput">Bottom Text:</label>
+      <em class="invalid-input" id="top-text-error"></em>
+      <label class="meme-label" for="bottom-input">Bottom Text:</label>
       <input
-        class="memeinput"
-        id="bottominput"
+        class="meme-input"
+        id="bottom-input"
         type="text"
         placeholder="Type here..."
       />
-      <button id="memesubmit" type="submit">Submit</button>
+      <em class="invalid-input" id="bottom-text-error"></em>
+      <button id="meme-submit" type="submit">Submit</button>
     </form>
     <footer>Created by Joe Brown & Ben McCarthy - 2024</footer>
   </body>
