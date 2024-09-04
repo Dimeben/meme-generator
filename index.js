@@ -45,7 +45,6 @@ function validTopInput(event) {
     topInput.classList.add("invalid");
     topInput.classList.remove("valid");
     checkValidText.topText.valid = "false";
-    console.log(topInput.classList);
     topTextError.innerText = `You have too many characters. Please delete ${
       topText.length - 50
     }.`;
@@ -53,11 +52,10 @@ function validTopInput(event) {
     topInput.classList.add("valid");
     topInput.classList.remove("invalid");
     checkValidText.topText.valid = "true";
-    console.log(topInput.classList);
+    topTextError.innerText = "";
   } else {
     topInput.classList.remove("valid");
     checkValidText.topText.valid = "false";
-    console.log(topInput.classList);
   }
 }
 
@@ -74,6 +72,7 @@ function validBottomInput(event) {
     bottomInput.classList.add("valid");
     bottomInput.classList.remove("invalid");
     checkValidText.bottomText.valid = "true";
+    bottomTextError.innerText = "";
   } else {
     bottomInput.classList.remove("valid");
     checkValidText.bottomText.valid = "false";
