@@ -211,14 +211,14 @@
   .trade-offer-bottom {
     font-size: 0.8vw;
     max-width: 7%;
-    top: 16%;
+    top: 10%;
   }
 
   .trade-offer-top {
-    left: 3%;
+    left: 1%;
   }
 
   .trade-offer-bottom {
-    left: 15%;
+    left: 9%;
   }
 }
