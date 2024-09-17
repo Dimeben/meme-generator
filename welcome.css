@@ -106,7 +106,7 @@
   .trade-offer-bottom {
     font-size: 4vw;
     max-width: 30%;
-    top: 20%;
+    top: 17%;
   }
 
   .trade-offer-top {
@@ -155,9 +155,9 @@
 
   .trade-offer-top,
   .trade-offer-bottom {
-    font-size: 1vw;
+    font-size: 2vw;
     max-width: 10%;
-    top: 13%;
+    top: 9%;
   }
 
   .trade-offer-top {
