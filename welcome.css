@@ -158,17 +158,17 @@
 
   .trade-offer-top,
   .trade-offer-bottom {
-    font-size: 0.8vw;
+    font-size: 1.5vw;
     max-width: 7%;
-    top: 12%;
+    top: 13%;
   }
 
   .trade-offer-top {
-    left: 1%;
+    left: 4%;
   }
 
   .trade-offer-bottom {
-    left: 9%;
+    left: 15%;
   }
 }
 
