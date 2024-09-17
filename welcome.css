@@ -6,138 +6,220 @@
 #welcome-meme {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+
+.drake-top,
+.drake-bottom,
+.freeway-top,
+.freeway-bottom,
+.trade-offer-top,
+.trade-offer-bottom {
+  position: absolute;
+  background-color: transparent;
+  font-family: helvetica;
+}
+
+.drake-top,
+.drake-bottom {
+  color: black;
+  right: 40%;
+  font-size: 3.5vw;
+  max-width: 20%;
 }
 
 .drake-top {
-  position: absolute;
-  color: black;
   top: 12%;
-  right: 40%;
-  background-color: transparent;
-  font-size: 3.5vw;
-  font-family: helvetica;
-  max-width: 20%;
 }
 
 .drake-bottom {
-  position: absolute;
-  color: black;
   bottom: 12%;
-  right: 40%;
-  background-color: transparent;
-  font-size: 3.5vw;
-  font-family: helvetica;
-  max-width: 20%;
 }
-.freeway-top {
-  position: absolute;
+
+.freeway-top,
+.freeway-bottom,
+.trade-offer-top,
+.trade-offer-bottom {
   color: aliceblue;
+  font-size: 1.5vw;
+  max-width: 10%;
+}
+
+.freeway-top {
   top: 14%;
   left: 13%;
-  background-color: transparent;
-  font-size: 1.5vw;
-  font-family: helvetica;
-  max-width: 10%;
 }
 
 .freeway-bottom {
-  position: absolute;
-  color: aliceblue;
   top: 16%;
   right: 60%;
-  background-color: transparent;
-  font-size: 1.5vw;
-  font-family: helvetica;
-  max-width: 10%;
 }
 
 .trade-offer-top {
-  position: absolute;
-  color: aliceblue;
   top: 16%;
   left: 4%;
-  background-color: transparent;
-  font-size: 1.5vw;
-  font-family: helvetica;
-  max-width: 10%;
 }
 
 .trade-offer-bottom {
-  position: absolute;
-  color: aliceblue;
   top: 16%;
   left: 16%;
-  background-color: transparent;
-  font-size: 1.5vw;
-  font-family: helvetica;
-  max-width: 10%;
 }
 
+/* Small screens (max-width: 480px) */
 @media (max-width: 480px) {
-  #drake {
+  #drake,
+  #freeway,
+  #tradeoffer {
     width: 100%;
     height: 50%;
+  }
+
+  .drake-top,
+  .drake-bottom {
+    right: 3%;
+    font-size: 8vw;
+    max-width: 45%;
   }
 
   .drake-top {
     top: 1%;
-    right: 3%;
-    font-size: 8vw;
-    font-family: helvetica;
-    max-width: 45%;
   }
 
   .drake-bottom {
-    top: 26%;
-    right: 3%;
-    font-size: 8vw;
-    font-family: helvetica;
-    max-width: 45%;
+    top: 24%;
   }
 
-  #freeway {
+  .freeway-top {
+    top: 6%;
+    left: 25%;
+    font-size: 3vw;
+    max-width: 15%;
+  }
+
+  .freeway-bottom {
+    top: 7%;
+    right: 35%;
+    font-size: 3vw;
+  }
+
+  .trade-offer-top,
+  .trade-offer-bottom {
+    font-size: 4vw;
+    max-width: 30%;
+    top: 20%;
+  }
+
+  .trade-offer-top {
+    left: 15%;
+  }
+
+  .trade-offer-bottom {
+    left: 65%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #drake,
+  #freeway,
+  #tradeoffer {
     width: 100%;
     height: 50%;
   }
 
+  .drake-top,
+  .drake-bottom {
+    right: 3%;
+    font-size: 8vw;
+    max-width: 45%;
+  }
+
+  .drake-top {
+    top: 1%;
+  }
+
+  .drake-bottom {
+    top: 35%;
+  }
+
   .freeway-top {
-    top: 7%;
+    top: 8%;
     left: 25%;
     font-size: 3vw;
-    max-width: 15%;
-    font-family: helvetica;
-    color: aliceblue;
   }
 
   .freeway-bottom {
     top: 9%;
     right: 30%;
     font-size: 3vw;
-    max-width: 15%;
-    font-family: helvetica;
-    color: aliceblue;
+  }
+
+  .trade-offer-top,
+  .trade-offer-bottom {
+    font-size: 1vw;
+    max-width: 10%;
+    top: 8%;
+  }
+
+  .trade-offer-top {
+    left: 3%;
+  }
+
+  .trade-offer-bottom {
+    left: 20%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #drake,
+  #freeway {
+    width: 50%;
+    height: 50%;
   }
 
   #tradeoffer {
     width: 100%;
-    height: 50%;
+    height: 10%;
+  }
+
+  .drake-top,
+  .drake-bottom {
+    left: 26%;
+    font-size: 3.5vw;
+    max-width: 25%;
+  }
+
+  .drake-top {
+    top: 1%;
+  }
+
+  .drake-bottom {
+    top: 50%;
+  }
+
+  .freeway-top {
+    top: 12%;
+    left: 12%;
+    font-size: 1.5vw;
+  }
+
+  .freeway-bottom {
+    top: 12%;
+    left: 25%;
+    font-size: 1.5vw;
+  }
+
+  .trade-offer-top,
+  .trade-offer-bottom {
+    font-size: 0.8vw;
+    max-width: 7%;
+    top: 11%;
   }
 
   .trade-offer-top {
-    top: 20%;
-    left: 15%;
-    font-size: 4vw;
-    max-width: 30%;
-    font-family: helvetica;
-    color: aliceblue;
+    left: 1%;
   }
 
   .trade-offer-bottom {
-    top: 20%;
-    left: 60%;
-    font-size: 4vw;
-    max-width: 30%;
-    font-family: helvetica;
-    color: aliceblue;
+    left: 9%;
   }
 }

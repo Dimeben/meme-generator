@@ -111,3 +111,5 @@ tradeOffer.addEventListener("click", selectImgFunc);
 topInput.addEventListener("keyup", validTopInput);
 bottomInput.addEventListener("keyup", validBottomInput);
 memeForm.addEventListener("submit", handleSubmit);
+
+`Finishing touches...`
