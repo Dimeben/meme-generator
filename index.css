@@ -183,7 +183,7 @@ footer {
 
 @media (min-width: 1400px) {
   .images-and-inputs img {
-    max-width: 600px;
-    max-height: 600px;
+    max-width: 300px;
+    max-height: 300px;
   }
 }
