@@ -65,7 +65,6 @@
   left: 16%;
 }
 
-/* Small screens (max-width: 480px) */
 @media (max-width: 480px) {
   #drake,
   #freeway,
