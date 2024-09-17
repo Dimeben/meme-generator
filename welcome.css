@@ -99,6 +99,7 @@
     top: 7%;
     right: 35%;
     font-size: 3vw;
+    max-width: 15%;
   }
 
   .trade-offer-top,
@@ -147,14 +148,14 @@
   .freeway-top {
     top: 8%;
     left: 25%;
-    font-size: 3vw;
+    font-size: 2.5vw;
     max-width: 10%;
   }
 
   .freeway-bottom {
     top: 9%;
     right: 30%;
-    font-size: 3vw;
+    font-size: 2.5vw;
     max-width: 10%;
   }
 
@@ -162,15 +163,15 @@
   .trade-offer-bottom {
     font-size: 1.5vw;
     max-width: 10%;
-    top: 8%;
+    top: 10%;
   }
 
   .trade-offer-top {
-    left: 25%;
+    left: 15%;
   }
 
   .trade-offer-bottom {
-    left: 15%;
+    left: 30%;
   }
 }
 
