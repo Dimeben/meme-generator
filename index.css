@@ -170,8 +170,8 @@ footer {
   }
 
   .images-and-inputs img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 200px;
+    max-height: 200px;
   }
 
   .meme-label,
@@ -183,7 +183,7 @@ footer {
 
 @media (min-width: 1400px) {
   .images-and-inputs img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 200px;
+    max-height: 200px;
   }
 }
