@@ -4,10 +4,6 @@
 
 ![Meme created using this app!](readme-imgs/2.png)
 
-#### To access the app, follow this URL:
-
-> https://meme-generator-yhzm.onrender.com/
-
 ## Skills
 
 - **JavaScript**
